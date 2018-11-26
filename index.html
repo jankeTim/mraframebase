@@ -25,13 +25,137 @@
 <body>
 	<a-scene>
 
-		<!-- CAMERA -->
-		<a-camera camera position="0 0 0">
-        </a-camera>
 
-	</a-scene>
+		<a-assets>
+			<a-asset-item id="erde" src="/assets/erde.gltf"></a-asset-item>
+			<a-asset-item id="Mercury" src="/assets/Mercury.gltf"></a-asset-item>
+			<a-asset-item id="Venus" src="/assets/Venus.gltf"></a-asset-item>
+			<a-asset-item id="mars" src="/assets/mars.gltf"></a-asset-item>
+			<a-asset-item id="Jupiter" src="/assets/Jupiter.gltf"></a-asset-item>
+			<a-asset-item id="Saturn" src="/assets/Saturn.gltf"></a-asset-item>
+			<a-asset-item id="Uranus" src="/assets/Uranus.gltf"></a-asset-item>
+			<a-asset-item id="Neptun" src="/assets/Neptun.gltf"></a-asset-item>
 
-	<script src="js/main.js"></script>
+		</a-assets>
+
+
+		<!-- Erde-->
+		<a-entity position="0 0 0" rotation="0 0 0">
+			<a-entity gltf-model="#erde" position="0 0 -2" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+			</a-entity>
+			<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+			
+		</a-entity>
+
+
+
+		<!-- Mercury-->
+		<a-entity>
+			<a-entity position="0 0 0" rotation="0 45 0">
+				<a-entity gltf-model="#Mercury" position="0 0 -1" scale="0.2 0.2 0.2">
+					<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+				</a-entity>
+
+
+			</a-entity>
+			<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+		</a-entity>
+
+
+		<!-- Venus-->
+		<a-entity position="0 0 0" rotation="0 90 0">
+			<a-entity gltf-model="#Venus" position="0 0 -2" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+			</a-entity>
+			
+			
+		</a-entity>
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+	<!-- Mars-->
+	<a-entity>
+		<a-entity position="0 0 0" rotation="0 135 0">
+			<a-entity gltf-model="#mars" position="0 0 -3" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+			</a-entity>
+			
+			
+		</a-entity>
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+	<!-- Jupiter-->
+	<a-entity>
+		<a-entity position="0 0 0" rotation="0 180 0">
+			<a-entity gltf-model="#Jupiter" position="0 0 -4" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+			</a-entity>
+			
+			
+		</a-entity>	
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+	<!-- Saturn-->
+	<a-entity>
+		<a-entity position="0 0 0" rotation="0 225 0">
+			<a-entity gltf-model="#Saturn" position="0 0 -5" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+			</a-entity>
+			
+			
+		</a-entity>
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+	<!-- Uranus-->
+	<a-entity>
+		<a-entity position="0 0 0" rotation="0 270 0">
+			<a-entity gltf-model="#Uranus" position="0 0 -6" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+			</a-entity>
+			
+			
+		</a-entity>
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+	<!-- Neptun-->
+	<a-entity>
+		<a-entity position="0 0 0" rotation="0 315 0">
+			<a-entity gltf-model="#Neptun" position="0 0 -7" scale="0.2 0.2 0.2">
+				<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+
+			</a-entity>
+			
+			
+		</a-entity>
+		<a-animation attribute="rotation" dur="5000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+	</a-entity>
+
+
+
+
+
+	<!-- CAMERA -->
+	<a-camera camera position="0 5 0">
+	</a-camera>
+
+</a-scene>
+
+<script src="js/main.js"></script>
 </body>
 
 </html>
